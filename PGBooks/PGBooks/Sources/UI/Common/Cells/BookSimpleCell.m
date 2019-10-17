@@ -77,16 +77,6 @@
                                    } failure:nil];
 }
 
-- (void)updateImage:(NSString *)image {
-    if (image != nil) { return; }
-    
-    NSURL * url = [NSURL URLWithString:image];
-    
-    if (url != nil) { return; }
-    
-    [self.coverView setImageWithURL:url];
-}
-
 - (IBAction)onClickButton:(id)sender {
     if (self.url == nil) { return; }
     
