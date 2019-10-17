@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Tab Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainTabController" customModule="PGBooks_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZ4-KW-2zb">
+                                <rect key="frame" x="0.0" y="807" width="414" height="89"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="fQ7-OH-UI5">
+                                        <rect key="frame" x="10" y="0.0" width="394" height="55"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ot9-zk-klE">
+                                                <rect key="frame" x="0.0" y="0.0" width="82" height="55"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <state key="normal" image="icNewNormal">
+                                                    <color key="titleColor" red="1" green="0.29803921570000003" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected" image="icNewSelect"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixd-l8-TRs">
+                                                <rect key="frame" x="104" y="0.0" width="82" height="55"/>
+                                                <state key="normal" image="icListNormal"/>
+                                                <state key="selected" image="icListSelect"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0T-qE-fCZ">
+                                                <rect key="frame" x="208" y="0.0" width="82" height="55"/>
+                                                <state key="normal" image="icForYouNormal"/>
+                                                <state key="selected" image="icForYouSelect"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETY-bJ-Nsh">
+                                                <rect key="frame" x="312" y="0.0" width="82" height="55"/>
+                                                <state key="normal" image="icSearchNormal"/>
+                                                <state key="selected" image="icSearchSelect"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fQ7-OH-UI5" firstAttribute="top" secondItem="cZ4-KW-2zb" secondAttribute="top" id="OSR-FY-EaE"/>
+                                    <constraint firstItem="fQ7-OH-UI5" firstAttribute="leading" secondItem="cZ4-KW-2zb" secondAttribute="leading" constant="10" id="hrL-DZ-4Mk"/>
+                                    <constraint firstAttribute="trailing" secondItem="fQ7-OH-UI5" secondAttribute="trailing" constant="10" id="ug0-8v-Pf0"/>
+                                </constraints>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sp1-vx-7XB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="807"/>
+                                <connections>
+                                    <segue destination="8BI-8f-mDg" kind="embed" identifier="TabContainer" id="gfa-hM-VzW"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sp1-vx-7XB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3rI-J5-uPy"/>
+                            <constraint firstItem="sp1-vx-7XB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5hL-BB-CoQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fQ7-OH-UI5" secondAttribute="bottom" id="9qd-jK-NzE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cZ4-KW-2zb" secondAttribute="trailing" id="A87-qa-SW7"/>
+                            <constraint firstAttribute="bottom" secondItem="cZ4-KW-2zb" secondAttribute="bottom" id="DNm-LS-Y4M"/>
+                            <constraint firstItem="cZ4-KW-2zb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Q0Y-ZP-jyD"/>
+                            <constraint firstItem="cZ4-KW-2zb" firstAttribute="top" secondItem="sp1-vx-7XB" secondAttribute="bottom" id="n6f-US-erm"/>
+                            <constraint firstAttribute="trailing" secondItem="sp1-vx-7XB" secondAttribute="trailing" id="sYW-Sd-byX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cZ4-KW-2zb" secondAttribute="top" constant="55" id="yc9-p5-zvu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="forYouButton" destination="J0T-qE-fCZ" id="UsU-JN-ofx"/>
+                        <outlet property="listButton" destination="Ixd-l8-TRs" id="MVY-Qr-5Fr"/>
+                        <outlet property="newButton" destination="Ot9-zk-klE" id="pKr-hn-cyu"/>
+                        <outlet property="searchButton" destination="ETY-bJ-Nsh" id="A10-93-sRx"/>
+                        <outlet property="tabBar" destination="fQ7-OH-UI5" id="Z1H-Ub-XTQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270" y="-531"/>
+        </scene>
+        <!--Tab Container-->
+        <scene sceneID="olY-M0-44F">
+            <objects>
+                <viewController id="8BI-8f-mDg" customClass="TabContainer" customModule="PGBooks_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Za7-R2-t5z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="807"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Gw8-p6-5Xs"/>
+                    </view>
+                    <connections>
+                        <segue destination="KQW-05-6Wk" kind="custom" identifier="New" customClass="TabSegue" customModule="PGBooks_swift" customModuleProvider="target" id="09m-84-Hr3"/>
+                        <segue destination="hWh-eF-HS1" kind="custom" identifier="List" customClass="TabSegue" customModule="PGBooks_swift" customModuleProvider="target" id="M94-m2-Cue"/>
+                        <segue destination="05a-DG-AGJ" kind="custom" identifier="ForYou" customClass="TabSegue" customModule="PGBooks_swift" customModuleProvider="target" id="mfD-Wk-uUd"/>
+                        <segue destination="sWd-ge-EjZ" kind="custom" identifier="Search" customClass="TabSegue" customModule="PGBooks_swift" customModuleProvider="target" id="Kpk-eO-Cx7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jFn-Mn-fQi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1081" y="-531"/>
+        </scene>
+        <!--New-->
+        <scene sceneID="MyL-hI-Vgw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="New" id="KQW-05-6Wk" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eh0-vB-Vdt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1864" y="-607"/>
+        </scene>
+        <!--List-->
+        <scene sceneID="dnc-6j-twu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="List" id="hWh-eF-HS1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vKQ-kR-6fl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1862" y="-556"/>
+        </scene>
+        <!--ForYou-->
+        <scene sceneID="97p-Vt-xae">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ForYou" id="05a-DG-AGJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Uj-Ah-q37" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1875" y="-502"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="8Gi-Yf-80Y">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" id="sWd-ge-EjZ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L8D-If-ZoP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1876" y="-451"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icForYouNormal" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="icForYouSelect" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="icListNormal" width="32" height="32"/>
+        <image name="icListSelect" width="32" height="32"/>
+        <image name="icNewNormal" width="32" height="32"/>
+        <image name="icNewSelect" width="32" height="32"/>
+        <image name="icSearchNormal" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="icSearchSelect" width="33.333332061767578" height="33.333332061767578"/>
+    </resources>
+</document>

@@ -1,0 +1,64 @@
+PODS:
+  - Alamofire (4.9.0)
+  - AlamofireImage (3.5.2):
+    - Alamofire (~> 4.8)
+  - Differentiator (4.0.1)
+  - PGTransitionKit (0.1.6)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+  - RxSwiftExt (5.1.1):
+    - RxSwiftExt/Core (= 5.1.1)
+    - RxSwiftExt/RxCocoa (= 5.1.1)
+  - RxSwiftExt/Core (5.1.1):
+    - RxSwift (~> 5.0)
+  - RxSwiftExt/RxCocoa (5.1.1):
+    - RxCocoa (~> 5.0)
+    - RxSwiftExt/Core
+  - SwiftyJSON (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - PGTransitionKit (= 0.1.6)
+  - RxCocoa
+  - RxDataSources
+  - RxSwift
+  - RxSwiftExt
+  - SwiftyJSON (= 4.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - AlamofireImage
+    - Differentiator
+    - PGTransitionKit
+    - RxCocoa
+    - RxDataSources
+    - RxRelay
+    - RxSwift
+    - RxSwiftExt
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  PGTransitionKit: c4e8a9156b566a98485e1bb3858ec2c216167d85
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  RxSwiftExt: 0d2fd77523a169d1459be34961b996a194bdef0e
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+
+PODFILE CHECKSUM: 20c1b37f330afbeb70885ade98f32f6cabdadd89
+
+COCOAPODS: 1.8.1

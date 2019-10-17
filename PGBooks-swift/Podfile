@@ -1,0 +1,21 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '10.0'
+use_frameworks!
+
+# ignore all warnings from all pods
+inhibit_all_warnings!
+
+target 'PGBooks-swift' do
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'RxDataSources'
+    pod 'RxSwiftExt'
+
+    pod 'Alamofire'
+    pod 'AlamofireImage' , '3.5.2'
+    
+    pod 'SwiftyJSON' , '4.0'
+
+    pod 'PGTransitionKit' , '0.1.6'
+end
