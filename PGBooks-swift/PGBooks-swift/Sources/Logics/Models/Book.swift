@@ -49,7 +49,7 @@ extension Book {
     
     var pageString:String? {
         guard let page = self.pages?.collapseIfEmpty else { return nil }
-        return "(\(page) pages))"
+        return "(\(page) pages)"
     }
     
     var etcs:String? {

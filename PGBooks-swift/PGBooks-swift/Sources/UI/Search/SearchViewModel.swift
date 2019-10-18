@@ -111,7 +111,7 @@ class SearchViewModel: ViewModelType {
         let rx_result =
             self.loadData
                 .delay(.milliseconds(300), scheduler: MainScheduler.asyncInstance)
-                .withLatestFrom(self.text).unwrap()
+                .withLatestFrom(self.text).map{ $0?.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) }.unwrap()
                 .withLatestFrom(self.output.sections) { (text: $0, data: $1) }
                 .flatMapLatest{ API.Store.Search.init(query: $0.text, page: $0.data.count).request() }
                 .share(replay: 1)
